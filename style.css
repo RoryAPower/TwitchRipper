@@ -1,11 +1,13 @@
 body {
 	background-color: #ddccbb;
 	font-family: 'Roboto Slab', serif;
+	padding-bottom: 50px;
 }
 
 .page-header {
 	font-family: 'Orbitron', sans-serif;
 }
+
 
 /*Search input*/
 .searchBox:focus {
@@ -29,6 +31,19 @@ body {
 	white-space: normal;
 	background-color: #556666;
 	color: #FFF;
+	border-bottom: 1px solid gray;
+
+}
+
+.channelBtn:link{
+	background-color: #556666;
+	outline: none;
+}
+
+.channelBtn:visited{
+	background-color: #556666;
+	outline: none;
+	color: #FFF;
 }
 
 .channelBtn:hover, .channelBtn:active {
@@ -39,17 +54,22 @@ body {
 	
 }
 
-.img-responsive {
-	border-radius: 50%;
-	
-	border: 5px solid #191718;
-	max-height: 100px;
-	max-width: 100px;
+.channelBtn:hover p, .channelBtn:active p{
+	color: #a5df9c;	
 }
 
-/*.img-responsive:hover {
-	border: 5px solid #a5df9c;
-}*/
+.img-responsive {
+	border-radius: 50%;
+	border: 3px solid #FFF;
+	max-height: 100px;
+	max-width: 100px;
+	margin: auto;
+}
+
+.channelBtn:hover .img-responsive, .channelBtn:active .img-responsive{
+	border: 3px solid #a5df9c;	
+}
+
 
 /*filter all/online/offline*/
 .filterCol {
@@ -72,16 +92,32 @@ body {
 .filterButton:hover, .filterButton:active {
 	background-color: #667788;
 	color: #FFF;
-	
-	/*border-right: 1px solid #a5df9c;*/
 	border-bottom: 1px solid #a5df9c;
 	
 }
+
+/*errors*/ 
+.errorCol {
+	background-color:  #333344;
+	color: #FFF;
+	border: none;
+	border: 1px solid transparent;
+	border-bottom: 1px solid gray;
+}
+
+.errorCol p {
+	color: #a5df9c;
+}
+
+
+
+
 
 /* Extra Small */
 @media(max-width:767px){
 	.filterButton {
 		border-right: none;
+		
 	}
 
 	.filterRow {
@@ -90,6 +126,19 @@ body {
 	}
 	
 	
+}
+
+.typeahead {
+	border-radius: 0px;
+	background-color: #FFF;
+	border: 1px solid gray;
+}
+.typeahead .active > a,
+.typeahead .active > a:hover {
+    color: #333344;
+
+    /* Change the typeahead background color here if you'd like */
+    background-color: gray;
 }
 
 
