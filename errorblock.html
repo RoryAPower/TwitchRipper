@@ -1,9 +1,11 @@
-{{#errorResponse}}
-<div class="row errorRow">
-	<div class="col-sm-6 col-sm-offset-3 errorCol text-center" data-toggle="tooltip"
-	title="{{channel}} not available">
-		<h2>{{channel}}</h2>
-		<p>{{message}}</p>
-	</div>    
+<div>
+	{{#errorResponse}}
+	<div class="row errorRow">
+		<div class="col-sm-6 col-sm-offset-3 errorCol text-center" data-toggle="tooltip"
+		title="{{channel}} not available">
+			<h2>{{channel}}</h2>
+			<p>{{message}}</p>
+		</div>    
+	</div>
+	{{/errorResponse}}
 </div>
-{{/errorResponse}}
